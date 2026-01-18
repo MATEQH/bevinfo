@@ -1,5 +1,6 @@
 // Írjon egy programot, amely átalakít egy 2-es komplemens kódban, 8 biten ábrázolt bináris számot decimális számmá
 
+// ezt a funkciót töröld ki, ha Boda interpreterjét használod
 function writeln(text) {
     console.log(text);
 }
