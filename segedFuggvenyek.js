@@ -1,3 +1,35 @@
+// Decimális szám átváltása hexadecimális számmá
+function decimalisToHexadecimalis(decimalisSzam) {
+    var hex = "";
+    var digits = "0123456789ABCDEF";
+
+    while (decimalisSzam > 0) {
+        var maradek = decimalisSzam % 16;
+        hex = digits[maradek] + hex;
+        decimalisSzam = Math.trunc(decimalisSzam / 16);
+    }
+
+    return hex;
+}
+
+// Hexadecimális szám átváltása decimális számmá
+function hexadecmialisToDecimalis(hexadecimalisSzam) {
+    var dec = 0;
+    var digits = "0123456789ABCDEFabcdef";
+
+    for (let i = 0; i < hexadecimalisSzam.length; i++) {
+        var index = digits.indexOf(hexadecimalisSzam[i]);
+        if (index > 15) index -= 6;
+        dec += index * Math.pow(16, hexadecimalisSzam.length - i - 1);
+    }
+
+    return dec;
+}
+
+console.log(hexToDec("FF59A"));
+console.log(decToHex(1045914));
+
+
 // 50 | 0
 // 25 | 1
 // 12 | 0
