@@ -26,10 +26,6 @@ function hexadecmialisToDecimalis(hexadecimalisSzam) {
     return dec;
 }
 
-console.log(hexToDec("FF59A"));
-console.log(decToHex(1045914));
-
-
 // 50 | 0
 // 25 | 1
 // 12 | 0
