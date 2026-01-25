@@ -1,7 +1,7 @@
 function binFracToDec(binFrac) {
     var decFrac = 0;
     var hatvany = 1 / 2;
-    var maxFrac = 15;
+    var maxFrac = 5;
 
     for (let i = 2; i < maxFrac; i++) {
         decFrac += binFrac[i] * hatvany;
