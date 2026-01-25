@@ -3,7 +3,7 @@ function binFracToDec(binFrac) {
     var hatvany = 1 / 2;
     var maxFrac = 15;
 
-    for (let i = 0; i < maxFrac; i++) {
+    for (let i = 2; i < maxFrac; i++) {
         decFrac += binFrac[i] * hatvany;
         hatvany /= 2;
     }
@@ -11,8 +11,8 @@ function binFracToDec(binFrac) {
     return decFrac;
 }
 
-var binFrac = "0110010111000110";
+var binFrac = "0.0110010111000110";
 var decFrac = binFracToDec(binFrac);
 
-console.log("Bináris tört: 0." + binFrac);
+console.log("Bináris tört: " + binFrac);
 console.log("Decimális tört: " + decFrac);
